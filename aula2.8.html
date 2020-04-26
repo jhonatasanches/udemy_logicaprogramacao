@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio 1 - Lógica de Programação</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <h1>Operadores Lógicos</h1>
+    <p>! = Negativa ou Not</p>
+    <p>&& = And ou E </p>
+    <p>|| = OR ou OU</p>
+    <script>
+        var n1 = parseFloat(prompt('Digite um numero: '));
+        var n2 = parseFloat(prompt('Digite um numero: '));
+
+        media = (n1 + n2) / 2
+
+        //     }if (media > 5 && n1 > 0 && n2 > 0) { o professor fez dessa forma, mas não esta rodando no meu computador
+        //      alert("Voce foi aprovado");             ja havia feito abaixo, por ter rodado normal o código 
+        // } else {
+        //      alert("Voce foi reprovado");
+        // }
+
+            if((n1 == 0)||(n2 == 0)){
+                alert ("Voce foi reprovado");   
+            }else if (media > 5){
+                alert ("Voce foi aprovado");
+            }else {
+                alert ("Voce foi reprovado");
+            }
+
+
+    </script>
+
+</body>
+
+</html>
