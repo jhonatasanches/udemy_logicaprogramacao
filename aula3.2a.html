@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio 1 - Lógica de Programação</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <h1>AULA - Tipos de Loop</h1>
+
+    <script>
+        var numero = parseFloat(prompt('Digite um numero qualquer: '))
+
+        // Quando preciso que o programa seja executado pelo menos uma vez mesmo que seja falso
+        // Eu uso o Do...While ou seja Faz Primeiro...Depois ver o que aconteceu
+        // Exemplo a var indice que no máximo poderia valer 1000 agora valerá 1001
+
+        var indice = 1001
+         do{
+            document.write(numero + ' x ' + indice + ' = ' + (numero * indice) + '<br>')
+            indice++
+        }while (indice <= 1000)
+        document.write('Saiu do Loop')
+    </script>
+
+</body>
+
+</html>
