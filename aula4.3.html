@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio 1 - Lógica de Programação</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <h1>AULA - Funções</h1>
+    <!-- Funções servem para reaproveitar o mesmo código -->
+
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        function mostrarTabuada() {
+            var n = parseFloat(prompt("Digite um numero: "))
+
+            var mensagem = ""
+            for (var i = 0; i <= 1000; i++) {
+                mensagem += n+ ' x ' +i+ ' = ' +(n*i)+ '<br>';
+            }
+            output.innerHTML = mensagem
+        }
+        function limparTabuada() { //funcao void
+            mensagem = '' 
+            output.innerHTML = mensagem
+        }
+
+    </script>
+
+</body>
+
+</html>

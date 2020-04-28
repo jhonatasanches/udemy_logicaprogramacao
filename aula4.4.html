@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio 1 - Lógica de Programação</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+    <button onclick="soma()"> + </button>
+    <button onclick="subtracao()"> - </button>
+    <button onclick="multiplicacao()"> * </button>
+    <button onclick="divisao()"> / </button>
+    <button onclick="apagar()"> Zerar a Conta </button>
+
+    <div id="output"></div>
+
+</body>
+
+<script>
+    var n = parseFloat(prompt("Digite um número: "))
+    output.innerHTML = n
+    function soma() {
+        var sm = parseFloat(prompt("Digite um número para somar:"))
+        n = n + sm
+        output.innerHTML = n
+    }
+    function subtracao() {
+        var sb = parseFloat(prompt("Digite um número para subtrair:"))
+        n = n - sb
+        output.innerHTML = n
+    }
+    function multiplicacao() {
+        var mult = parseFloat(prompt("Digite um número para multiplicar:"))
+        n = n * mult
+        output.innerHTML = n
+    }
+    function divisao() {
+        var divs = parseFloat(prompt("Digite um número para dividir:"))
+        n = n / divs
+        output.innerHTML = n
+    }
+    function apagar() {
+        n = n-n
+        output.innerHTML = n
+    }
+</script>
+
+
+</html>

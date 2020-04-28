@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio 1 - Lógica de Programação</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <h1>AULA - Funções</h1>
+    <!-- Funções servem para reaproveitar o mesmo código -->
+
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        function mostrarTabuada (){
+            alert('oi mundo aqui vai ser a nova tabuada')
+        }
+        function limparTabuada(){
+            alert('oi mundo aqui vai ser para limpar a tabuada')
+        }
+        var output = document.querySelector('#output')
+       
+        var mensagem = ""
+        for (var i = 0; i <= 1000; i++) {
+            mensagem += 'i: ' + i + '<br>';
+        }
+        output.innerHTML = mensagem
+
+    </script>
+
+</body>
+
+</html>
