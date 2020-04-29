@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio 1 - Lógica de Programação</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <h1>Funções que recebem parametro</h1>
+
+    <button onclick="calculaArea(largura, altura)">Calcula Area do Retangulo</button>
+    <div id="area"></div>
+</body>
+
+<script>
+    var largura = parseFloat(prompt('Digite a largura'))
+    var altura = parseFloat(prompt('Digite altura'))
+
+    function calculaArea(l,a) {
+        alert ("Recebendo parâmetro Largura: " +l)
+        alert ("Recebendo parâmetro Altura: " +a)
+        alert("A area é " +largura*altura)
+    }
+</script>
+
+
+</html>
